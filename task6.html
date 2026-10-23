@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Keyboard Events - Assignment 5 JavaScript Basics">
+  <title>Keyboard Events | Assignment 5</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html">Balzhan.dev</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="task0.html">Task 0</a>
+      <a href="task1.html">Task 1</a>
+      <a href="task2.html">Task 2</a>
+      <a href="task3.html">Task 3</a>
+      <a href="task4.html">Task 4</a>
+      <a href="task5.html">Task 5</a>
+      <a class="active" href="task6.html">Task 6</a>
+      <a href="task7.html">Task 7</a>
+      <a href="task8.html">Task 8</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="page-top">
+      <p class="breadcrumb"><a href="../index.html">Home</a> / Keyboard Events</p>
+      <p class="eyebrow">ASSIGNMENT 05 · TASK6</p>
+      <h1>Keyboard Events</h1>
+      <p>Type in the input field to display its current value in real time using keyup.</p>
+    </section>
+    
+    <section class="demo-layout">
+      <div class="panel">
+        <h2>Live text preview</h2>
+        <label class="field-label" for="liveInput">Type something</label>
+        <input class="text-input" id="liveInput" type="text" placeholder="Start typing here..." autocomplete="off">
+        <div class="demo-box"><p class="eyebrow">LIVE OUTPUT</p><div class="live-preview" id="livePreview" aria-live="polite">Your text will appear here...</div></div>
+      </div>
+      <aside class="panel"><h2>Keyboard event</h2><p>The <code>keyup</code> event fires after a key is released.</p><p>The script reads <code>input.value</code> and displays it in the preview using <code>textContent</code>.</p></aside>
+    </section>
+
+    <a class="back-link" href="../index.html">← Back to all tasks</a>
+  </main>
+  <footer class="site-footer"><span>Assignment #5 — JavaScript Basics</span><span>Built with HTML, CSS & JavaScript</span></footer>
+</body>
+</html>

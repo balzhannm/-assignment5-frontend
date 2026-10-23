@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive To-Do List - Assignment 5 JavaScript Basics">
+  <title>Interactive To-Do List | Assignment 5</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html">Balzhan.dev</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="task0.html">Task 0</a>
+      <a href="task1.html">Task 1</a>
+      <a href="task2.html">Task 2</a>
+      <a href="task3.html">Task 3</a>
+      <a href="task4.html">Task 4</a>
+      <a href="task5.html">Task 5</a>
+      <a href="task6.html">Task 6</a>
+      <a href="task7.html">Task 7</a>
+      <a class="active" href="task8.html">Task 8</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="page-top">
+      <p class="breadcrumb"><a href="../index.html">Home</a> / Interactive To-Do List</p>
+      <p class="eyebrow">ASSIGNMENT 05 · TASK8</p>
+      <h1>Interactive To-Do List</h1>
+      <p>Add tasks, mark them complete with a strike-through effect, and delete individual tasks.</p>
+    </section>
+    
+    <section class="demo-layout">
+      <div class="panel">
+        <h2>My tasks</h2>
+        <p>Keep track of small goals and mark each one when it is done.</p>
+        <form class="todo-form" id="todoForm">
+          <label class="hidden" for="todoInput">New task</label>
+          <input class="text-input" id="todoInput" type="text" placeholder="e.g. Practise JavaScript" maxlength="160" autocomplete="off" required>
+          <button class="btn" type="submit">Add Task</button>
+        </form>
+        <div class="empty-state" id="todoEmpty" style="margin-top:18px">No tasks yet. Add your first task above.</div>
+        <ul class="todo-list" id="todoList"></ul>
+        <div class="stats"><span>Total: <strong id="totalTasks">0</strong></span><span>Completed: <strong id="completedTasks">0</strong></span></div>
+        <div class="control-row"><button class="btn secondary" id="clearCompleted" type="button">Clear completed</button></div>
+      </div>
+      <aside class="panel">
+        <h2>Features</h2>
+        <p><strong>Add:</strong> Enter a task and press “Add Task”.</p>
+        <p><strong>Complete:</strong> Tick the checkbox to apply a strike-through effect.</p>
+        <p><strong>Delete:</strong> Press Delete next to a task.</p>
+        <div class="code-note">Tasks are stored in a JavaScript array while the page is open. They are not saved to a database or localStorage, as required.</div>
+      </aside>
+    </section>
+
+    <a class="back-link" href="../index.html">← Back to all tasks</a>
+  </main>
+  <footer class="site-footer"><span>Assignment #5 — JavaScript Basics</span><span>Built with HTML, CSS & JavaScript</span></footer>
+</body>
+</html>

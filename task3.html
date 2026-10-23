@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Changing Styles - Assignment 5 JavaScript Basics">
+  <title>Changing Styles | Assignment 5</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html">Balzhan.dev</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="task0.html">Task 0</a>
+      <a href="task1.html">Task 1</a>
+      <a href="task2.html">Task 2</a>
+      <a class="active" href="task3.html">Task 3</a>
+      <a href="task4.html">Task 4</a>
+      <a href="task5.html">Task 5</a>
+      <a href="task6.html">Task 6</a>
+      <a href="task7.html">Task 7</a>
+      <a href="task8.html">Task 8</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="page-top">
+      <p class="breadcrumb"><a href="../index.html">Home</a> / Changing Styles</p>
+      <p class="eyebrow">ASSIGNMENT 05 · TASK3</p>
+      <h1>Changing Styles</h1>
+      <p>Change the background color and font size of a div with button clicks.</p>
+    </section>
+    
+    <section class="demo-layout">
+      <div class="panel">
+        <h2>Style playground</h2>
+        <div class="demo-box" id="styleDemo"><p><strong>Style this block</strong></p><p>Use the buttons below to change my background color and text size.</p></div>
+        <div class="control-row"><button class="btn" id="changeColorButton">Change color</button><button class="btn secondary" id="changeFontButton">Change font size</button><button class="btn secondary" id="resetStyleButton">Reset</button></div>
+      </div>
+      <aside class="panel"><h2>Style properties</h2><p><code>element.style.backgroundColor</code> changes the background.</p><p><code>element.style.fontSize</code> changes the text size.</p><div class="code-note">The Reset button is an extra feature that returns the block to its original style.</div></aside>
+    </section>
+
+    <a class="back-link" href="../index.html">← Back to all tasks</a>
+  </main>
+  <footer class="site-footer"><span>Assignment #5 — JavaScript Basics</span><span>Built with HTML, CSS & JavaScript</span></footer>
+</body>
+</html>
